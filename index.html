@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxury Free Fire IDs | Owner Haseeb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            background: linear-gradient(120deg, #050505, #0f2027, #000);
+            color:#fff;
+            overflow-x:hidden;
+        }
+
+        header{
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            text-align:center;
+        }
+
+        header h1{
+            font-size:4rem;
+            background: linear-gradient(90deg, gold, white, gold);
+            -webkit-background-clip:text;
+            color:transparent;
+            animation: glow 3s infinite;
+        }
+
+        header p{
+            margin-top:15px;
+            font-size:1.2rem;
+            opacity:0.8;
+        }
+
+        @keyframes glow{
+            0%{text-shadow:0 0 10px gold;}
+            50%{text-shadow:0 0 30px white;}
+            100%{text-shadow:0 0 10px gold;}
+        }
+
+        .btn{
+            margin-top:30px;
+            padding:15px 40px;
+            background:gold;
+            color:black;
+            border:none;
+            border-radius:30px;
+            font-size:1rem;
+            cursor:pointer;
+            transition:0.4s;
+        }
+
+        .btn:hover{
+            transform:scale(1.1);
+            box-shadow:0 0 20px gold;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.05);
+            border-radius:20px;
+            padding:25px;
+            text-align:center;
+            transition:0.5s;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .card::before{
+            content:"";
+            position:absolute;
+            top:-50%;
+            left:-50%;
+            width:200%;
+            height:200%;
+            background:linear-gradient(45deg, transparent, gold, transparent);
+            animation: rotate 6s linear infinite;
+        }
+
+        @keyframes rotate{
+            0%{transform:rotate(0deg);}
+            100%{transform:rotate(360deg);}
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 0 25px rgba(255,215,0,0.6);
+        }
+
+        .card h3{
+            margin-top:20px;
+            position:relative;
+        }
+
+        .card p{
+            margin-top:10px;
+            opacity:0.8;
+            position:relative;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            background:#000;
+            font-size:0.9rem;
+            opacity:0.7;
+        }
+
+        .floating{
+            position:fixed;
+            width:20px;
+            height:20px;
+            background:gold;
+            border-radius:50%;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        @keyframes float{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-30px);}
+            100%{transform:translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Luxury Free Fire IDs</h1>
+        <p>Trusted Seller • Premium Accounts • Owner: Haseeb</p>
+        <button class="btn" onclick="scrollDown()">View IDs</button>
+    </header>
+
+    <section id="shop">
+        <h2 style="text-align:center; margin-bottom:40px;">🔥 Available Premium IDs</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Level 75 ID</h3>
+                <p>Rare Skins • Elite Pass • Safe Transfer</p>
+                <p><b>Price:</b> 45,000 PKR</p>
+            </div>
+
+            <div class="card">
+                <h3>Level 65 ID</h3>
+                <p>Legendary Bundles • High KD</p>
+                <p><b>Price:</b> 30,000 PKR</p>
+            </div>
+
+            <div class="card">
+                <h3>Level 55 ID</h3>
+                <p>Pro Emotes • Clean History</p>
+                <p><b>Price:</b> 20,000 PKR</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 style="text-align:center;">👑 Why Choose Haseeb?</h2>
+        <p style="text-align:center; max-width:700px; margin:20px auto;">
+            100% Trusted Seller, Secure Delivery, No Scams, Luxury Accounts Only.
+            Your satisfaction is our priority.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 Luxury Free Fire ID Seller | Owner: Haseeb
+    </footer>
+
+    <script>
+        function scrollDown(){
+            document.getElementById("shop").scrollIntoView({behavior:"smooth"});
+        }
+
+        // Floating animation particles
+        for(let i=0;i<15;i++){
+            let dot = document.createElement("div");
+            dot.className="floating";
+            dot.style.left = Math.random()*100 + "vw";
+            dot.style.top = Math.random()*100 + "vh";
+            dot.style.animationDuration = (Math.random()*5 + 3) + "s";
+            document.body.appendChild(dot);
+        }
+    </script>
+
+</body>
+</html>
